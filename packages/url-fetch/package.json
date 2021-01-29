@@ -1,7 +1,11 @@
 {
   "name": "@typescript-monorepo-example/url-fetch",
   "version": "0.0.3",
-  "author": "Chad Rosenberg",
+  "author": {
+    "name": "Chad Rosenberg",
+    "email": "abditus@gmail.com",
+    "url": "https://www.linkedin.com/in/chad-rosenberg-b33358/"
+  },
   "license": "MIT",
   "private": true,
   "description": "Get a redirect url from a webpage that redirects",

@@ -1,9 +1,23 @@
 {
-  "name": "@abd1tus/typescript-monorepo-example",
+  "name": "@typescript-monorepo-example",
   "version": "0.0.1",
   "main": "index.js",
+  "author": {
+    "name": "Chad Rosenberg",
+    "email": "abditus@gmail.com",
+    "url": "https://www.linkedin.com/in/chad-rosenberg-b33358/"
+  },
   "repository": "https://github.com/abd1tus/typescript-monorepo-example",
   "license": "MIT",
+  "private": true,
+  "keywords": [
+    "lerna",
+    "typescript",
+    "mocha",
+    "chai",
+    "sinon",
+    "monorepo"
+  ],
   "scripts": {
     "clean": "lerna run clean",
     "build": "lerna run build",
