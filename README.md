@@ -76,19 +76,21 @@ yarn build
 
 ### Publishing with Lerna
 
-The beauty behind Lerna is its ability make editing interdependent pacakges together much easier by automaticallically updating package versions for you as needed, as well as commiting those changes to git, and publishing to npm (or other, if configured).
+The beauty behind Lerna is its ability make editing interdependent packages together much easier by automatically updating package versions for you as needed, as well as committing those changes to git, and publishing to npm (or other, if configured).
 
 ```
 cd typescript-monorepo-example
 yarn build
 ```
 
-Note, packages in the project are marked as private in package.json so that they cannot be accidentially pubshed to npmjs.com (or any others).  In your own project you may want to choose to leave some packages public, and others marked as private that do not need to be pacakged - such as AWS lambda funcitons that don't get re-used anywhere.
+Note, packages in the project are marked as private in package.json so that they cannot be accidentally published to npmjs.com (or any others).  In your own project you may want to choose to leave some packages public, and others marked as private that do not need to be packaged - such as AWS lambda functions that don't get re-used anywhere.
 
 
-## Working with a Lerna monorpo in VS Code
+## Working with a Lerna monorepo in VS Code
 
 The ```lerna bootstrap``` command sets up symbolic links between packages so that updates to one package (after a build) can be seen by other packages without the need to push to git or re-deploy custom npm packages.
+
+**Important:** If libraries fall out of sync and you need to refresh VS Code, open the command palette (Ctrl + Shift + P, if you are on Windows; Cmd + Shift + P, if you are on a Mac) and run ```Developer: Reload Window```.
 
 ### Loading the workspace in VS Code
 
@@ -130,7 +132,7 @@ lerna exec --parallel -- rm bad-file.txt
 
 ### Find outdated packages ordered by dependency usage
 ```
-lerna exec -- yarn outadted
+lerna exec -- yarn outdated
 ```
 
 ### Find packages with security vulnerabilities
