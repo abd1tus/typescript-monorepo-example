@@ -2,8 +2,8 @@ import { fetchRedirect } from '@typescript-monorepo-example/url-fetch';
 
 export async function main(url: string): Promise<void> {
   try {
-    const result = await fetchRedirect(url)
-    console.log()
+    const result = await fetchRedirect(url);
+    console.log(result);
   } catch (err) {
     console.log(err);
   }

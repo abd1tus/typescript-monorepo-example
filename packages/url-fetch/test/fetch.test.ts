@@ -1,15 +1,14 @@
 import Chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
-import { fetchRedirect } from '../src/fetch';
 
 import https from 'https';
-import { IncomingMessage } from 'http';
 
 import sinon from 'sinon';
+import { fetchRedirect } from '../src';
 
 Chai.use(chaiAsPromised);
 
-describe('fetchRedirect', () => {
+describe('fetchRedirect', function () {
   const redirectUrl = 'https://somewhere/better';
   let get: sinon.SinonStub;
 
@@ -17,13 +16,13 @@ describe('fetchRedirect', () => {
     get = sinon.stub(https, 'get');
   });
 
-  after(() => {
+  after(function () {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (https.get as any).restore();
   });
 
-  describe('200', () => {
-    it('throws an error', async () => {
+  describe('200', function () {
+    it('throws an error', async function () {
       get.yields({
         statusCode: 200,
         headers: { location: redirectUrl },
@@ -32,8 +31,8 @@ describe('fetchRedirect', () => {
     });
   });
 
-  describe('301', () => {
-    it('returns the redirect result', async () => {
+  describe('301', function () {
+    it('returns the redirect result', async function () {
       get.yields({
         statusCode: 301,
         headers: { location: redirectUrl },
