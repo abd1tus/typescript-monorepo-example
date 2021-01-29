@@ -1,6 +1,6 @@
 {
   "name": "@typescript-monorepo-example/eslint-config-typescript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Chad Rosenberg",
   "license": "MIT",
   "private": true,

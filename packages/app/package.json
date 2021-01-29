@@ -1,6 +1,6 @@
 {
   "name": "@typescript-monorepo-example/app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Chad Rosenberg",
   "license": "MIT",
   "private": true,
@@ -13,8 +13,6 @@
     "build": "tsc",
     "test": "ts-mocha --file ./test/teardown.ts --paths ./test/**/*test.ts",
     "clean": "rm -rf dist/* && true"
-  },
-  "dependencies": {
   },
   "devDependencies": {
     "@types/chai": "^4.2.14",
