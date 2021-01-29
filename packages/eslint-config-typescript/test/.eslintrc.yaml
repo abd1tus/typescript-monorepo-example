@@ -1,0 +1,2 @@
+extends:
+  - "../src/index.js"

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "packages/app"
+		},
+		{
+			"path": "packages/url-fetch"
+		},
+		{
+			"path": "packages/eslint-config-typescript"
+		}
+	]
+}

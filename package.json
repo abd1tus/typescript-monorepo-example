@@ -1,0 +1,17 @@
+{
+  "name": "@abd1tus/typescript-monorepo-example",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/abd1tus/typescript-monorepo-example",
+  "license": "MIT",
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "build:packages": "lerna run --no-private build",
+    "lint": "lerna run --parallel lint",
+    "test": "lerna run --parallel test"
+  },
+  "dependencies": {
+    "lerna": "^3.22.1"
+  }
+}

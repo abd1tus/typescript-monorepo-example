@@ -1,0 +1,6 @@
+# local build directories
+node_modules
+lerna-debug.log
+yarn-error.log
+
+# dependencies
