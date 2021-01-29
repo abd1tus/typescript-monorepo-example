@@ -1,6 +1,6 @@
 {
   "name": "@typescript-monorepo-example/url-fetch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Chad Rosenberg",
   "license": "MIT",
   "private": true,
@@ -24,7 +24,7 @@
     "@types/mocha": "^8.2.0",
     "@types/node": "^14.14.22",
     "@types/sinon": "^9.0.10",
-    "@typescript-monorepo-example/eslint-config-typescript": "^0.0.2",
+    "@typescript-monorepo-example/eslint-config-typescript": "^0.0.3",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chance": "^1.1.7",
