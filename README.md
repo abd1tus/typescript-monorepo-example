@@ -80,8 +80,21 @@ The beauty behind Lerna is its ability make editing interdependent packages toge
 
 ```
 cd typescript-monorepo-example
-yarn build
+lerna publish
 ```
+
+or to force updates of all Lerna tracked packages.
+```
+cd typescript-monorepo-example
+lerna publish --force-publish
+```
+
+If you are not publishing packages to npm:
+```
+cd typescript-monorepo-example
+lerna publish -skip-npm
+```
+
 
 Note, packages in the project are marked as private in package.json so that they cannot be accidentally published to npmjs.com (or any others).  In your own project you may want to choose to leave some packages public, and others marked as private that do not need to be packaged - such as AWS lambda functions that don't get re-used anywhere.
 
